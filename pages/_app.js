@@ -1,7 +1,9 @@
 import React from "react";
 import App, { Container } from "next/app";
+import { ThemeProvider } from "styled-components";
 
 import Layout from "../components/layout";
+import theme from "../components/styles/theme";
 
 class KrspApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -19,9 +21,11 @@ class KrspApp extends App {
 
     return (
       <Container>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <ThemeProvider theme={theme}>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </ThemeProvider>
       </Container>
     );
   }

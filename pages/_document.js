@@ -3,7 +3,7 @@ import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
   /**
-   *
+   * Creates the stylesheet for the page.
    * @param {} param0
    */
   static getInitialProps({ renderPage }) {

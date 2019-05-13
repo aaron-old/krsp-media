@@ -1,6 +1,6 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
-import PageSection from "./styles/page-section";
+import PageSection from "./styles/pageSection";
 
 export default ({ children }) => (
   <main>

@@ -11,7 +11,7 @@ const Footer = styled.footer`
   bottom: 0;
   left: 0;
 
-  @media only screen and (min-width: 1224px) {
+  @media screen and (min-width: 1224px) {
     right: 3rem;
     left: 3rem;
   }

@@ -1,13 +1,5 @@
 function Home() {
-  return (
-    <div>
-      <object
-        type="image/svg+xml"
-        data="../static/logos/color-black-with-bg.svg"
-        class="logo"
-      />
-    </div>
-  );
+  return <div>test areas</div>;
 }
 
 export default Home;

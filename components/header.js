@@ -2,13 +2,10 @@ import styled from "styled-components";
 
 export default () => (
   <Header>
-    <nav>
-      <a>Home</a>
-      <a>About</a>
-      <a>Contact</a>
-    </nav>
+    <nav />
   </Header>
 );
+
 const Header = styled.header`
   min-height: 60px;
   grid-columns: 1 / -1;

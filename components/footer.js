@@ -6,6 +6,7 @@ const Footer = styled.footer`
   min-height: 120px;
   grid-columns: 1 / -1;
   background: ${props => props.theme.colors.midnightBlack};
+  box-shadow: ${props => props.theme.boxShadows.level2};
   position: absolute;
   right: 0;
   bottom: 0;

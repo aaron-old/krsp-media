@@ -2,17 +2,32 @@ import styled from "styled-components";
 
 export default () => (
   <Header>
-    <nav />
+    <Nav>
+      <a href="/">Home</a>
+      <a href="/">About</a>
+      <a href="/">Contact</a>
+    </Nav>
   </Header>
 );
 
 const Header = styled.header`
   min-height: 60px;
   grid-columns: 1 / -1;
-  box-shadow: 0 0 0.4em ${props => props.theme.colors.darkChicken};
+  align-items: center;
+  box-shadow: ${props => props.theme.boxShadows.level2};
   background: ${props => props.theme.colors.midnightBlack};
 `;
 
+const Nav = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+`;
 // keep it big enough to look at with a place holder now.
 // when the screen is greater than 920 px, show the header should be displayed with all links.
 // the links are centered.
